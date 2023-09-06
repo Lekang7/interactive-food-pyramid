@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Internal CSS Styles -->
+<style>
+
+/* CSS styles for various shapes and elements */
+.triangle
+{
+    transform : translate (-100%,200%);
+    text-align: center;
+    width: 0;
+    height: 0;
+    border: solid 120px;
+    border-color: transparent transparent red transparent;
+}
+.white1
+{
+    text-align: center;
+    width: 240px;
+    height: 0px;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.trapezoid1{
+    text-align: center;
+    width: 280px;
+    height: 0px;
+    border-bottom: 100px solid orange;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.white2
+{
+    text-align: center;
+    width: 480px;
+    height: 0px;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.trapezoid2{
+    text-align: center;
+    width: 520px;
+    height: 0px;
+    border-bottom: 100px solid rgb(255, 251, 0);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.trapezoid3{
+    text-align: center;
+    width: 720px;
+    height: 0px;
+    border-bottom: 100px solid rgb(9, 171, 235);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.trapezoid4{
+    text-align: center;
+    width: 920px;
+    height: 0px;
+    border-bottom: 100px solid rgb(139, 96, 44);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.trapezoid5{
+    text-align: center;
+    width: 1120px;
+    height: 0px;
+    border-bottom: 100px solid rgb(15, 247, 15);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.add
+{
+    text-align: center;
+    position: absolute;
+    transform: translate(-100%, 10%);
+    height: 30px;
+    width: 30px;
+    border-radius:360%;
+    background-color: white;
+}
+.minus
+{
+    text-align: center;
+    position: absolute;
+    transform: translate(5%, 10%);
+    height: 30px;
+    width: 30px;
+    border-radius:360%;
+    background-color: white;
+}
+.input
+{
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius:360%;
+    background-color: white;
+    font-display: center;
+}
+.pyramid
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+.footer
+{
+    position: absolute;
+    bottom: .05%;
+    right: 45%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button 
+{
+-webkit-appearance: none;
+margin: 0;
+}
+.triangle .button,
+.trapezoid1 .button,
+.trapezoid2 .button,
+.trapezoid3 .button,
+.trapezoid4 .button,
+.trapezoid5 .button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.input
+{
+    opacity: 1;
+    pointer-events: none; 
+}
+.triangle:hover .button,
+.trapezoid1:hover .button,
+.trapezoid2:hover .button,
+.trapezoid3:hover .button,
+.trapezoid4:hover .button,
+.trapezoid5:hover .button {
+    opacity: 1;
+}
+
+
+</style>
+</head>
+
+<!-- HTML -->
+<body>
+    <center>
+        <div class = "absolute">
+            <div class = "pyramid">
+                <!-- Pyramid sections with buttons and input fields -->
+                <div class = "triangle"> 
+                    <div class = "button" style="position: absolute; left:48.5%; top:180px; ">
+                        <!-- "+" and "-" buttons and input field -->
+                        <button class="add add1">+</button>
+                        <input class="input input1" type="number" value="0" style>
+                        <button class="minus minus1">-</button>
+                    </div>
+                </div>
+                <div class = "white1"> </div>
+                <!-- Pyramid sections with buttons and input fields -->
+                <div class = "trapezoid1">
+                    <div class = "button">
+                        <!-- "+" and "-" buttons and input field -->
+                        <button class="add add2">+</button>
+                        <input class="input input2" type="number" value="0">
+                        <button class="minus minus2">-</button>
+                    </div>
+                </div>
+                <div class = "white2"> </div>
+                <!-- Pyramid sections with buttons and input fields -->
+                <div class = "trapezoid2">
+                    <div class = "button">
+                        <!-- "+" and "-" buttons and input field -->
+                        <button class="add add3">+</button>
+                        <input class="input input3" type="number" value="0">
+                        <button class="minus minus3">-</button>
+                    </div>
+                </div>
+                <!-- Pyramid sections with buttons and input fields -->
+                <div class = "trapezoid3"> 
+                    <div class = "button">
+                        <!-- "+" and "-" buttons and input field -->
+                        <button class="add add4">+</button>
+                        <input class="input input4" type="number" value="0">
+                        <button class="minus minus4">-</button>
+                    </div>
+                </div>
+                <!-- Pyramid sections with buttons and input fields -->
+                <div class = "trapezoid4"> 
+                    <div class = "button">
+                        <!-- "+" and "-" buttons and input field -->
+                        <button class="add add5">+</button>
+                        <input class="input input5" type="number" value="0">
+                        <button class="minus minus5">-</button>
+                    </div>
+                </div>
+                <!-- Pyramid sections with buttons and input fields -->
+                <div class = "trapezoid5">
+                    <div class = "button">
+                        <!-- "+" and "-" buttons and input field -->
+                        <button class="add add6">+</button>
+                        <input class="input input6" type="number" value="0">
+                        <button class="minus minus6">-</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </center>
+</body>
+
+
+<footer>
+    <center>
+        <div class = "footer">
+            <!-- Footer content such as name, date and time -->
+            <h1>Levi Ngugi's</h1>
+            <h1>Food Pyramid</h1>
+            <p>Date and Time</p>
+            <input type="date" id="setDate">
+            <input type="time" id="setTime">
+        </div>
+    </center>
+</footer>
+  
+</head>
+
+<!-- JavaScript -->
+<script>
+    /* Function to update the value in the input field based on the action */
+    function updateValue(inputClass, action) {
+     let input = document.querySelector(inputClass);
+     if (action === 'add') {
+     input.value = parseInt(input.value) + 1;
+        } else if (action === 'minus' && input.value > 0) {
+        input.value = parseInt(input.value) - 1;
+        }
+    }
+
+     /* Event listeners for the "+" and "-" buttons for each input field */
+    document.querySelector(".add1").addEventListener("click", function() {
+        updateValue(".input1", 'add');
+    });
+
+    document.querySelector(".minus1").addEventListener("click", function() {
+        updateValue(".input1", 'minus');
+    });
+
+    document.querySelector(".add2").addEventListener("click", function() {
+        updateValue(".input2", 'add');
+    });
+
+    document.querySelector(".minus2").addEventListener("click", function() {
+        updateValue(".input2", 'minus');
+    });
+
+    document.querySelector(".add3").addEventListener("click", function() {
+       updateValue(".input3", 'add');
+    });
+
+    document.querySelector(".minus3").addEventListener("click", function() {
+        updateValue(".input3", 'minus');
+    });
+
+    document.querySelector(".add4").addEventListener("click", function() {
+        updateValue(".input4", 'add');
+    });
+
+    document.querySelector(".minus4").addEventListener("click", function() {
+        updateValue(".input4", 'minus');
+    });
+
+    document.querySelector(".add5").addEventListener("click", function() {
+        updateValue(".input5", 'add');
+    });
+
+    document.querySelector(".minus5").addEventListener("click", function() {
+        updateValue(".input5", 'minus');
+    });
+
+    document.querySelector(".add6").addEventListener("click", function() {
+        updateValue(".input6", 'add');
+    });
+
+    document.querySelector(".minus6").addEventListener("click", function() {
+        updateValue(".input6", 'minus');
+    });
+    add.addEventListener('mouseenter', () => {
+        add.style.display = 'block';
+    });
+
+    add.addEventListener('mouseleave', () => {
+        add.style.display = 'none';
+    });
+
+
+</script>
+
+</html>
